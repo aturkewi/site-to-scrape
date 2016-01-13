@@ -1,0 +1,14 @@
+<%= link_to 'Products', root_path %>
+<div class="product">
+  <div class="product-name">
+    <h1><%=@product.name%></h1>
+  </div>
+  <div class="sku">
+    <p>
+      SKU: <%= @product.sku %>
+    </p>
+  </div>
+  <div class="price">
+    <h3>Price: <%= @product.price %></h3>
+  </div>
+</div>

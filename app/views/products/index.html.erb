@@ -1,0 +1,9 @@
+<h1>View all products</h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <li class='product-link'>
+      <%= render partial: 'product', locals: {product: product} %>
+    </li>
+  <% end %>
+</ul>
