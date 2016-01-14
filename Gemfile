@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'faker'
 gem 'pg'
+gem 'httparty'
+gem 'nokogiri'
+gem 'pry'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
