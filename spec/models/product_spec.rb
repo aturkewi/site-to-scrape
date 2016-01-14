@@ -9,6 +9,9 @@ RSpec.describe Product do
       it 'has a sku' do
         expect(Product.first.sku).to eq(123456789)
       end
+      it 'has a price' do
+        expect(Product.first.price).to eq(10)
+      end
     end
   end
 end
