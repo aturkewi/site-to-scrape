@@ -1,7 +1,7 @@
 class CssScraperServiceObject
 
   def get_data
-    (1..100).to_a.collect do |product_id|
+    (1..1000).to_a.collect do |product_id|
       scrape(product_id)
     end
   end
