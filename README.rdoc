@@ -1,3 +1,10 @@
 == Site to scrape
 
-This website is built to test the scraping time between CSS selectors and XPath. 
+This website is built to test the scraping time between CSS selectors and XPath.
+
+If you would like to test this out on your own, you will have to do the following:
+ - `bundle install` to make sure you have all the required gems installed
+ - `rake db:create && rake db:migrate` to set up the database
+ - `rake db:seed` to seed the database with 1000 fake products
+ - `rails s` to run the server on localhost:3000
+ - `rake benchmark:run_benchmark` to run the test
