@@ -13,10 +13,9 @@ class XpathScraperServiceObject
 
     def scrape(product_id)
       page = get_page(product_id)
-      binding.pry
-      name = page.css('div.product-name h1').text
-      sku = page.css('div.sku p').text.strip.delete("SKU: ")
-      price = page.css('div.price h3').text.strip.delete("Price: ")
+      name = page.xpath("//div[@class='product-name']/h1").text
+      sku = page.xpath("//div[@class='sku']/p").text.strip.delete("SKU: ")
+      price = page.xpath("//div[@class='price']/h3").text.strip.delete("Price: ")
       {name:name, sku:sku, price:price}
     end
 
