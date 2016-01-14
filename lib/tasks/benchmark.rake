@@ -6,6 +6,7 @@ namespace :benchmark do
 
   desc "TODO"
   task check_nokogiri_import: :environment do
+    BenchmarkServiceObject.check_nokogiri_import
   end
 
 end
